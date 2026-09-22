@@ -85,16 +85,25 @@ a {
 
 .directory {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    width: 100%;
+    gap: 10px;
     padding: 3px;
-    background-color: grey; /**/
+/*    height: 500px;
+    overflow: hidden;/**/
+    /*background-color: grey; /**/
 }
 .stall-preview {
     display: flex;
     margin: 0px;
     padding: 0px;
     height: 200px;
+    border: black;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    min-width: 400px;
+    overflow:hidden;
     background-color: white; /**/
 }
 .stall-preview .image {

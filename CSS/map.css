@@ -1,0 +1,46 @@
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: calc(100vh - 110px);;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.map svg {
+    display: flex;
+}
+
+.map svg .stall{
+    opacity: 1;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.map svg .stall:hover{
+    opacity: 0.8;
+    stroke: black;
+    stroke-width: 3px;
+}
+
+.map svg .services{
+    fill: #ff8400;
+}
+.map svg .meals{
+    fill: #ffce00;
+}
+.map svg .groceries{
+    fill: #00833e;
+}
+.map svg .goods{
+    fill: #c425ff;
+}
+.map svg .music{
+    fill: #96e2f8;
+}

@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/map.css">
     </head>
     <body>
         <header>
@@ -28,22 +29,61 @@
             </div>
         </header>
         <main>
-            <div class = "map">
-                <img src="Images/Map.png" alt="map of the markets" usemap="#markets">
-
-                <map name = "markets">
-                    <area shape="rect" coords = "105,633, 175,751" alt="Stall 1" href="Stall Profiles/stall-1.html">
-                    <area shape="poly" coords = "374,304, 373,265, 443,262, 444,300" alt="Stall 2" href="Stall Profiles/stall-2.html">
-                    <area shape="rect" coords = "634,407, 670,443" alt="Stall 3" href="Stall Profiles/stall-3.html">
-                    <area shape="poly" coords = "531,1004, 586,1031, 562,1077, 508,1050" alt="Stall 4" href="Stall Profiles/stall-4.html">
-                    <area shape="rect" coords = "359,319, 414,364" alt="Stall 5" href="Stall Profiles/stall-5.html">
-                    <area shape="poly" coords = "257,814, 315,833, 298,886, 240,867" alt="Stall 6" href="Stall Profiles/stall-6.html">
-                    <area shape="poly" coords = "554,384, 587,410, 562,442, 529,416" alt="Stall 7" href="Stall Profiles/stall-7.html">
-                    <area shape="poly" coords = "186,857, 214,903, 168,932, 140,887" alt="Stall 8" href="Stall Profiles/stall-8.html">
-                    <area shape="poly" coords = "219,346, 299,335, 309,400, 228,412" alt="Stall 9" href="Stall Profiles/stall-9.html">
-                    <area shape="rect" coords = "114,367, 171,443" alt="Stall 10" href="Stall Profiles/stall-10.html">
-                </map>
-            </div>
+            <figure class="map">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1280">
+                    <image href="Images/Clean Map.png"/>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-1.html">
+                            <rect class="services" x="634" y="407" width="40" height="40"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-2.html">
+                            <rect class="meals" x="114" y="367" width="60" height="80"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-3.html">
+                            <rect class="meals" x="220" y="345" width="80" height="60" transform="rotate(-10 260 375)"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-4.html">
+                            <rect class="meals" x="150" y="870" width="60" height="60" transform="rotate(50 180 900)"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-5.html">
+                            <rect class="groceries" x="100" y="630" width="80" height="120"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-6.html">
+                            <rect class="groceries" x="370" y="260" width="80" height="40" transform="rotate(-6 410 280)"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-7.html">
+                            <rect class="goods" x="510" y="1010" width="60" height="60" transform="rotate(25 540 1040)"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-8.html">
+                            <rect class="goods" x="360" y="320" width="60" height="40"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-9.html">
+                            <rect class="music" x="540" y="390" width="40" height="40" transform="rotate(40 560 410)"></rect>
+                        </a>
+                    </g>
+                    <g class="stall">
+                        <a href="Stall Profiles/stall-10.html">
+                            <rect class="music" x="250" y="820" width="60" height="60" transform="rotate(20 280 850)"></rect>
+                        </a>
+                    </g>
+                </svg>
+            </figure>
         </main>
     </body>
 </html>

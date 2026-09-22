@@ -72,8 +72,22 @@ header {
     color: white;
 }
 
+.groupings .button {
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    min-width: 40px;
+    background-color: #c5c5c5;
+    color: black;
+    padding-inline: 7px;
+    border-radius: 25px;
+}
+.groupings .button:hover {
+    background-color: #7a7a7a;
+    color: white;
+}
 .groupings .active {
-    background-color: #705E5E;
+    background-color: #7a7a7a;
     color: white;
 }
 a {
@@ -114,6 +128,9 @@ a {
     aspect-ratio: 1/1;
     background-color: wheat; /**/
     display: flex;
+    border: black;
+    border-right: solid;
+    border-width: 2px;
     justify-content: center;
     align-content: center;
 }

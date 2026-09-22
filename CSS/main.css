@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    min-height: 100vh;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
     /*background-color: grey; /**/
 }
 
-.login a {
+.login p {
     text-align: center;
 }
 
@@ -41,12 +42,13 @@ header {
     justify-content: center;
     text-align: center;
     height: fit-content;
+    min-width: 40px;
     background-color: #E0CCCC;
     color: black;
     margin-left: 5px;
-    padding-inline: 5px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-inline: 7px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     border-radius: 15px;
 }
 .active-page {
@@ -58,8 +60,8 @@ header {
     color: white;
 }
 a {
-  color: inherit;
-  text-decoration: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 
@@ -101,16 +103,11 @@ a {
     /*background-color: greenyellow; /**/
     justify-content: right;
 }
-.map {
-    width: 100%;
-    aspect-ratio: 1/1;
-    display: flex;
-    height: auto;
-    max-height: 1280px;
-    justify-content: center;
-}
 
 main {
     margin: 5px;
     padding: 5px;
 }
+
+
+

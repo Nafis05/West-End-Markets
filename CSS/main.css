@@ -27,6 +27,7 @@ header {
     display: flex;
     margin: 0px;
     padding: 3px;
+    gap: 5px;
     margin-left: auto;
     margin-right: 0px;
     justify-content: right;
@@ -38,6 +39,18 @@ header {
     text-align: center;
 }
 
+.groupings {
+    display: flex;
+    margin: 0px;
+    padding: 3px;
+    margin-left: auto;
+    margin-right: 0px;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+    /*background-color: grey; /**/
+}
+
 .button {
     justify-content: center;
     text-align: center;
@@ -45,7 +58,6 @@ header {
     min-width: 40px;
     background-color: #E0CCCC;
     color: black;
-    margin-left: 5px;
     padding-inline: 7px;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -56,6 +68,11 @@ header {
     color: white;
 }
 .button:hover {
+    background-color: #705E5E;
+    color: white;
+}
+
+.groupings .active {
     background-color: #705E5E;
     color: white;
 }

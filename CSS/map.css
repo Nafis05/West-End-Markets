@@ -17,30 +17,30 @@ main {
     display: flex;
 }
 
-.map svg .stall{
+.map svg .stall {
     opacity: 1;
     stroke: black;
     stroke-width: 1px;
 }
 
-.map svg .stall:hover{
+.map svg .stall:hover {
     opacity: 0.8;
     stroke: black;
     stroke-width: 3px;
 }
 
-.map svg .services{
+.map svg .services {
     fill: #ff8400;
 }
-.map svg .meals{
+.map svg .meals {
     fill: #ffce00;
 }
-.map svg .groceries{
+.map svg .groceries {
     fill: #00833e;
 }
-.map svg .goods{
+.map svg .goods {
     fill: #c425ff;
 }
-.map svg .music{
+.map svg .music {
     fill: #96e2f8;
 }

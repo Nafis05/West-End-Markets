@@ -27,8 +27,82 @@
             </div>
         </header>
         <main>
+            <div class = "groupings">
+                <a onclick="ShowAll()" class="button all active">
+                    <p>All</p>
+                </a>
+                <a onclick="ShowServices()" class="button services">
+                    <p>Services</p>
+                </a>
+                <a onclick="ShowMeals()" class="button meals">
+                    <p>Meals</p>
+                </a>
+                <a onclick="ShowGroceries()" class="button groceries">
+                    <p>Groceries</p>
+                </a>
+                <a onclick="ShowGoods()" class="button goods">
+                    <p>Goods</p>
+                </a>
+                <a onclick="ShowMusic()" class="button music">
+                    <p>Music</p>
+                </a>
+                <script>
+                    function ShowList(list,) {
+                        for (var i = 0; i < list.length; i++){
+                            list[i].style.display = "flex";
+                        }
+                    }
+                    function HideList(list) {
+                        for (var i = 0; i < list.length; i++){
+                            list[i].style.display = "None";
+                        }
+                    }
+                    function ChangeActiveButton(list, e) {
+                        for (var i = 0; i < list.length; i++){
+                            list[i].classList.remove("active")/**/
+                        }
+                        e[0].classList.add("active")
+                    }
+
+                    function ChangeButton(tag) {
+                        const container = document.querySelector(".groupings");
+                        const list = container.getElementsByClassName("button");
+                        ChangeActiveButton(list, container.getElementsByClassName(tag));
+                    }
+                    
+                    function ShowAll() {
+                        ShowList(document.getElementsByClassName("stall-preview"));
+                        ChangeButton("all");
+                    }
+                    function ShowServices() {
+                        HideList(document.getElementsByClassName("stall-preview"));
+                        ShowList(document.getElementsByClassName("stall-preview services"));
+                        ChangeButton("services");
+                    }
+                    function ShowMeals() {
+                        HideList(document.getElementsByClassName("stall-preview"));
+                        ShowList(document.getElementsByClassName("stall-preview meals"));
+                        ChangeButton("meals");
+                    }
+                    function ShowGroceries() {
+                        HideList(document.getElementsByClassName("stall-preview"));
+                        ShowList(document.getElementsByClassName("stall-preview groceries"));
+                        ChangeButton("groceries");
+                    }
+                    function ShowGoods() {
+                        HideList(document.getElementsByClassName("stall-preview"));
+                        ShowList(document.getElementsByClassName("stall-preview goods"));
+                        ChangeButton("goods");
+                    }
+                    function ShowMusic() {
+                        HideList(document.getElementsByClassName("stall-preview"));
+                        ShowList(document.getElementsByClassName("stall-preview music"));
+                        ChangeButton("music");
+                    }
+                </script>
+            </div>
             <div class = "directory">
-                <a class = "stall-preview" href = "Stall Profiles/stall-1.html">
+                <a class = "stall-preview services" href = "Stall Profiles/stall-1.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 1">
                     </div>
@@ -45,7 +119,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-2.html">
+                <a class = "stall-preview meals" href = "Stall Profiles/stall-2.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 2">
                     </div>
@@ -62,7 +136,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-3.html">
+                <a class = "stall-preview meals" href = "Stall Profiles/stall-3.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 3">
                     </div>
@@ -79,7 +153,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-4.html">
+                <a class = "stall-preview meals" href = "Stall Profiles/stall-4.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 4">
                     </div>
@@ -96,7 +170,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-5.html">
+                <a class = "stall-preview groceries" href = "Stall Profiles/stall-5.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 5">
                     </div>
@@ -113,7 +187,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-6.html">
+                <a class = "stall-preview groceries" href = "Stall Profiles/stall-6.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 6">
                     </div>
@@ -130,7 +204,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-7.html">
+                <a class = "stall-preview goods" href = "Stall Profiles/stall-7.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 7">
                     </div>
@@ -147,7 +221,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-8.html">
+                <a class = "stall-preview goods" href = "Stall Profiles/stall-8.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 8">
                     </div>
@@ -164,7 +238,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-9.html">
+                <a class = "stall-preview music" href = "Stall Profiles/stall-9.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 9">
                     </div>
@@ -181,7 +255,7 @@ Donec lacinia quam tristique tellus convallis, et laoreet odio ultrices. Integer
 Vivamus placerat dapibus urna, vehicula viverra dolor consectetur scelerisque. Pellentesque vel tincidunt ligula. Nulla ornare nunc sit amet orci molestie, at tincidunt risus lacinia. Aenean eu erat eget quam dictum aliquam vitae rutrum sem. Pellentesque quis porta eros. Aenean lorem quam, venenatis ac condimentum eu, tincidunt eu nisi. Mauris vel condimentum augue. </p>
                     </div>
                 </a>
-                <a class = "stall-preview" href = "Stall Profiles/stall-10.html">
+                <a class = "stall-preview music" href = "Stall Profiles/stall-10.html">
                     <div class = "image">
                         <img src="Images/Placeholder.png" alt="An image of stall 10">
                     </div>

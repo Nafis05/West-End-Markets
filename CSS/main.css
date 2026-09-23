@@ -86,7 +86,49 @@ header {
     background-color: #7a7a7a;
     color: white;
 }
+
+.groupings .services {
+    background-color: #ff8400;
+}
+.groupings .services:hover {
+    background-color: #ad5a00;
+    color: white;
+}
+.groupings .meals {
+    background-color: #ffce00;
+}
+.groupings .meals:hover {
+    background-color: #aa8800;
+    color: white;
+}
+.groupings .groceries {
+    background-color: #00833e;
+}
+.groupings .groceries:hover {
+    background-color: #004922;
+    color: white;
+}
+.groupings .goods {
+    background-color: #c425ff;
+}
+.groupings .goods:hover {
+    background-color: #8719af;
+    color: white;
+}
+.groupings .music {
+    background-color: #96e2f8;
+}
+.groupings .music:hover {
+    background-color: #598692;
+    color: white;
+}
+
 .groupings .active {
+    background-color: #7a7a7a;
+    color: white;
+}
+
+.groupings .active:hover {
     background-color: #7a7a7a;
     color: white;
 }
@@ -144,6 +186,7 @@ a {
     padding: 0px;
     margin: 0px;
 }
+
 
 
 
